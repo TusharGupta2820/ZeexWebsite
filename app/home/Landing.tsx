@@ -810,7 +810,13 @@ export default function Landing({ onNavigate }: LandingProps) {
         <section className="landing-page" id="hero">
           {/* ── Existing video background — kept as-is ── */}
           <div className="landing-video-wrap">
-            <video autoPlay muted loop playsInline
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              poster="/assets/z-tracs-poster.jpg"
               className="landing-bg-video"
               src="/assets/Z-Tracs by Zeex AI.mp4"
             />
