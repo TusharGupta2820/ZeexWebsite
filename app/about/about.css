@@ -1,0 +1,727 @@
+.about-page {
+  background: linear-gradient(180deg, #061b33 0%, #07182a 100%);
+  color: var(--white);
+}
+
+.about-hero {
+  position: relative;
+  min-height: 72vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 160px;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(0, 229, 255, 0.14), transparent 35%),
+    radial-gradient(circle at 80% 30%, rgba(80, 150, 255, 0.12), transparent 40%),
+    linear-gradient(135deg, #04111f 0%, #071b34 45%, #0a2342 75%, #04111f 100%);
+  background-size: 180% 180%;
+  animation: aboutNeonShift 22s ease-in-out infinite alternate;
+  filter: saturate(1.05);
+  transform: translate3d(0, var(--about-parallax-y, 0px), 0);
+}
+
+.about-hero-inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  perspective: 1200px;
+  overflow: visible;
+  position: relative;
+  z-index: 1;
+}
+
+.about-title {
+  font-size: clamp(2.6rem, 5.5vw, 3.8rem);
+  margin: 0 0 28px;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+@keyframes aboutNeonShift {
+  0% { background-position: 0% 40%; }
+  50% { background-position: 100% 60%; }
+  100% { background-position: 0% 40%; }
+}
+
+.cursor-glow {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0;
+  transform: translate3d(-50%, -50%, 0);
+  background: radial-gradient(circle, rgba(0, 229, 255, 0.20) 0%, rgba(0, 136, 255, 0.12) 38%, rgba(0, 20, 60, 0) 72%);
+  filter: blur(18px);
+  transition: opacity 0.2s ease;
+  mix-blend-mode: screen;
+}
+
+.about-stats {
+  padding: 22px 24px 56px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-stats .section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 18px;
+}
+
+.about-stat-card {
+  border: 1px solid rgba(122, 183, 255, 0.22);
+  background: rgba(6, 27, 51, 0.44);
+  backdrop-filter: blur(6px);
+  border-radius: 14px;
+  padding: 20px 18px;
+  text-align: center;
+}
+
+.about-stat-value {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  color: #e9f6ff;
+}
+
+.about-stat-label {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: rgba(225, 239, 255, 0.78);
+}
+
+.about-sub {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 12px;
+}
+
+.about-lead {
+  max-width: 800px;
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: rgba(241, 247, 255, 0.92);
+  margin-bottom: 48px;
+  letter-spacing: 0.01em;
+}
+
+.about-story,
+.about-team,
+.about-cta {
+  padding: 60px 24px;
+}
+
+@media (max-width: 900px) {
+  .about-hero-inner {
+    padding: 60px 28px;
+  }
+  
+  .about-title {
+    font-size: 2.2rem;
+    margin-bottom: 24px;
+  }
+  
+  .about-lead {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 36px;
+  }
+  
+  .hero-card {
+    padding: 28px 24px;
+    max-width: 100%;
+  }
+  
+  .about-subtitle {
+    font-size: 1rem;
+  }
+  
+  .about-stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-stat-number {
+    font-size: 2.5rem;
+  }
+  
+  .about-stat-label {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-hero {
+    padding-top: 120px;
+  }
+  
+  .about-hero-inner {
+    padding: 48px 20px;
+  }
+  
+  .about-title {
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+    line-height: 1.25;
+  }
+  
+  .about-lead {
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-bottom: 28px;
+  }
+  
+  .hero-card {
+    padding: 24px 20px;
+  }
+  
+  .hero-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 14px;
+  }
+  
+  .hero-card p {
+    font-size: 0.98rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .about-story,
+  .about-team,
+  .about-cta {
+    padding: 48px 16px;
+  }
+  
+  .about-stat-number {
+    font-size: 2rem;
+  }
+  
+  .about-stat-label {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding-top: 100px;
+  }
+  
+  .about-title {
+    font-size: 1.6rem;
+  }
+  
+  .about-subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+/* ============================================
+   TECHNOLOGY STACK BUBBLES
+   ============================================ */
+
+.tech-bubble {
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-bubble::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(0, 229, 255, 0.15), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: inherit;
+}
+
+.tech-bubble:hover {
+  transform: translateY(-4px) scale(1.05);
+  background: rgba(0, 229, 255, 0.15);
+  border-color: rgba(0, 229, 255, 0.5);
+  box-shadow: 0 8px 25px rgba(0, 229, 255, 0.3);
+}
+
+.tech-bubble:hover::before {
+  opacity: 1;
+}
+
+/* ============================================
+   SECURITY & PRIVACY CARDS
+   ============================================ */
+
+.security-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.security-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 229, 255, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: inherit;
+}
+
+.security-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(0, 229, 255, 0.3);
+  box-shadow: 0 12px 40px rgba(0, 229, 255, 0.2);
+}
+
+.security-card:hover::before {
+  opacity: 1;
+}
+
+/* ============================================
+   TEAM SECTION ENHANCED STYLES
+   ============================================ */
+
+/* Team Grid - Narrower Width */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 320px));
+  gap: 32px;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+/* Team Card Enhanced */
+.team-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 32px 24px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.team-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 229, 255, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(0, 229, 255, 0.3);
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 229, 255, 0.15);
+}
+
+.team-card:hover::before {
+  opacity: 1;
+}
+
+/* Image Wrapper with Overlay */
+.team-card-image-wrapper {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.team-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.team-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Hover Overlay */
+.team-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 229, 255, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 50%;
+}
+
+.team-card:hover .team-card-overlay {
+  opacity: 1;
+}
+
+.view-profile-text {
+  color: white;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Card Text */
+.team-card h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.team-card:hover h4 {
+  color: #00e5ff;
+}
+
+.team-card small {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+/* ============================================
+   TEAM MODAL STYLES
+   ============================================ */
+
+.team-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  animation: modalOverlayFadeIn 0.3s ease;
+}
+
+@keyframes modalOverlayFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.team-modal {
+  background: linear-gradient(135deg, #0a1e3a 0%, #061530 100%);
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  border-radius: 24px;
+  max-width: 700px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: modalSlideIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 
+    0 30px 80px rgba(0, 0, 0, 0.5),
+    0 0 60px rgba(0, 229, 255, 0.15);
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.team-modal::-webkit-scrollbar {
+  width: 8px;
+}
+
+.team-modal::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.team-modal::-webkit-scrollbar-thumb {
+  background: rgba(0, 229, 255, 0.3);
+  border-radius: 10px;
+}
+
+.team-modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+  line-height: 1;
+}
+
+.team-modal-close:hover {
+  background: rgba(0, 229, 255, 0.2);
+  border-color: rgba(0, 229, 255, 0.4);
+  transform: rotate(90deg);
+}
+
+.team-modal-header {
+  padding: 40px 40px 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.team-modal-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(0, 229, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.team-modal-header-info h2 {
+  font-size: 2rem;
+  margin: 0 0 8px 0;
+  color: white;
+  font-weight: 700;
+}
+
+.team-modal-title {
+  font-size: 1.1rem;
+  color: #00e5ff;
+  margin: 0;
+  font-weight: 600;
+}
+
+.team-modal-body {
+  padding: 30px 40px 40px;
+}
+
+.team-modal-section {
+  margin-bottom: 32px;
+}
+
+.team-modal-section:last-child {
+  margin-bottom: 0;
+}
+
+.team-modal-section h3 {
+  font-size: 1.2rem;
+  color: #00e5ff;
+  margin: 0 0 16px 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.team-modal-section p {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Expertise Tags */
+.team-modal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.team-modal-tag {
+  background: rgba(0, 229, 255, 0.1);
+  border: 1px solid rgba(0, 229, 255, 0.25);
+  color: #00e5ff;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.team-modal-tag:hover {
+  background: rgba(0, 229, 255, 0.2);
+  border-color: rgba(0, 229, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Achievements List */
+.team-modal-achievements {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.team-modal-achievements li {
+  color: rgba(255, 255, 255, 0.85);
+  padding: 12px 0 12px 32px;
+  position: relative;
+  line-height: 1.6;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.team-modal-achievements li:last-child {
+  border-bottom: none;
+}
+
+.team-modal-achievements li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #00e5ff;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Quote Section */
+.team-modal-quote-section {
+  background: rgba(0, 229, 255, 0.05);
+  border-left: 4px solid #00e5ff;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.team-modal-quote {
+  margin: 0;
+  font-size: 1.15rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
+}
+
+/* Contact Links */
+.team-modal-contact-links {
+  display: flex;
+  gap: 16px;
+}
+
+.team-modal-contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: rgba(0, 229, 255, 0.1);
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  border-radius: 999px;
+  color: #00e5ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.team-modal-contact-link:hover {
+  background: rgba(0, 229, 255, 0.2);
+  border-color: rgba(0, 229, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 229, 255, 0.2);
+}
+
+/* Team Responsive */
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .team-modal-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 24px 24px;
+  }
+  
+  .team-modal-body {
+    padding: 24px;
+  }
+  
+  .team-modal-contact-links {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-modal-header-info h2 {
+    font-size: 1.6rem;
+  }
+  
+  .team-modal-image {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* ── White Footer ── */
+.site-footer {
+  background: #ffffff !important;
+  border-top: 1px solid rgba(6, 27, 51, 0.1) !important;
+  color: #061b33 !important;
+}
+
+.site-footer .footer-section h4,
+.site-footer .footer-section h4 *,
+.site-footer .footer-links a,
+.site-footer p,
+.site-footer span,
+.site-footer a,
+.site-footer div,
+.site-footer .brand-mark,
+.site-footer .footer-legal-link,
+.site-footer .footer-bottom,
+.site-footer .footer-bottom-bar,
+.site-footer .footer-copyright,
+.site-footer .footer-legal-links,
+.site-footer .footer-contact-info,
+.site-footer .footer-description {
+  color: #061b33 !important;
+  opacity: 1 !important;
+}
+
+.site-footer .footer-links a:hover,
+.site-footer .footer-legal-link:hover {
+  color: #0b284c !important;
+}
+
+.site-footer .landing-logo img {
+  filter: none !important;
+}

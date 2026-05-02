@@ -1,0 +1,24 @@
+graph TD
+	subgraph AppRouter
+		ParticleCanvas[ParticleCanvas]
+		Splash[Splash]
+		TransitionVideo[TransitionVideo]
+		Landing[Landing (Home)]
+		AboutPage[AboutPage]
+		Header[Header]
+	end
+
+	ParticleCanvas -->|visible| Header
+	ParticleCanvas -->|visible| Splash
+	Splash -->|6s| TransitionVideo
+	TransitionVideo -->|onComplete| Landing
+
+	Header -->|navigate: home| Landing
+	Header -->|navigate: about| AboutPage
+
+	Landing -->|onNavigate: about| AboutPage
+	AboutPage -->|onNavigate: home| Landing
+
+	%% Notes
+	classDef comp fill:#f9f,stroke:#333,stroke-width:1px;
+	class ParticleCanvas,Splash,TransitionVideo,Landing,AboutPage,Header comp;

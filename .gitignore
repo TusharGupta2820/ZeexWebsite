@@ -1,0 +1,23 @@
+# GSD State Files
+.gsd/ARCHITECTURE.md
+.gsd/DECISIONS.md
+.gsd/JOURNAL.md
+.gsd/ROADMAP.md
+.gsd/SPEC.md
+.gsd/STACK.md
+.gsd/STATE.md
+.gsd/TODO.md
+
+# OS generated
+Thumbs.db
+.DS_Store
+
+# Dependencies and build output
+/node_modules
+/.next
+/out
+/.env*.local
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log*
+*.tsbuildinfo

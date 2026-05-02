@@ -1,0 +1,369 @@
+/* CSS for blogs section *//* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* Tablet - 900px */
+@media (max-width: 900px) {
+  .blogs-hero {
+    padding-top: 140px;
+  }
+  
+  .blogs-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+  
+  .blogs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile - 768px */
+@media (max-width: 768px) {
+  .blogs-hero {
+    padding-top: 120px;
+    padding-bottom: 48px;
+  }
+  
+  .blogs-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .blog-card {
+    padding: 20px;
+  }
+}
+
+/* Mobile - 640px */
+@media (max-width: 640px) {
+  .blogs-hero {
+    padding-top: 110px;
+  }
+  
+  .blogs-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* Extra Small - 480px */
+@media (max-width: 480px) {
+  .blogs-hero {
+    padding-top: 100px;
+  }
+  
+  .blogs-title {
+    font-size: 1.6rem;
+  }
+  
+  .blog-card {
+    padding: 16px;
+  }
+}
+.blogs-page {
+  /* Main wrapper */
+}
+
+/* HERO SECTION */
+.blogs-hero {
+  padding-top: 160px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.blogs-hero-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blogs-hero-title {
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.blogs-hero-copy {
+  font-size: 1.2rem;
+}
+
+/* ARTICLES CONTENT */
+.blogs-articles {
+  padding-bottom: 80px;
+  background: transparent;
+}
+
+.blogs-articles-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blogs-articles-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.blogs-articles-title {
+  font-size: 2.5rem;
+  margin: 0 auto 10px auto;
+  text-align: center;
+  width: 100%;
+}
+
+.blogs-articles-copy {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Sub-Navigation Categories */
+.blogs-categories {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.blogs-category-btn {
+  padding: 8px 24px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.05); /* Default */
+}
+
+.blogs-category-btn.active {
+  background: var(--accent);
+}
+
+/* Articles Grid */
+.blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.blogs-card {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blogs-card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.blogs-card-date {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.blogs-card-category {
+  font-size: 0.8rem;
+  background: rgba(79, 70, 229, 0.2);
+  color: #a5b4fc;
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+.blogs-card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.blogs-card-excerpt {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  margin-bottom: 25px;
+  flex-grow: 1;
+}
+
+.blogs-card-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #a5b4fc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: gap 0.2s;
+}
+
+.blogs-card-link:hover {
+  gap: 12px;
+}
+
+/* Pagination */
+.blogs-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.blogs-pagination-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.blogs-pagination-btn.disabled {
+  color: rgba(255, 255, 255, 0.5);
+  cursor: default;
+}
+
+.blogs-pagination-pages {
+  display: flex;
+  gap: 10px;
+}
+
+.blogs-page-number {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+
+.blogs-page-number.active {
+  background: var(--accent);
+  border: none;
+}
+
+/* NEWSLETTER SECTION */
+.blogs-newsletter {
+  padding-bottom: 100px;
+}
+
+.blogs-newsletter-card {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.blogs-newsletter-title {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.blogs-newsletter-copy {
+  margin-bottom: 30px;
+}
+
+.blogs-newsletter-form {
+  display: flex;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.blogs-newsletter-input {
+  flex: 1;
+  padding: 14px 24px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+
+.blogs-newsletter-submit {
+  padding: 0 32px;
+}
+
+/* FOOTER UPDATES */
+.footer-logo-container {
+  margin-bottom: 18px;
+}
+
+.footer-logo-img {
+  width: 32px;
+}
+
+.footer-description {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.footer-contact-info {
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.footer-bottom-bar {
+  border-top: 1px solid rgba(6, 27, 51, 0.1);
+  margin-top: 40px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-copyright {
+  font-size: 0.85rem;
+}
+
+.footer-legal-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-legal-link {
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+/* ── White Footer ── */
+.site-footer {
+  background: #ffffff !important;
+  border-top: 1px solid rgba(6, 27, 51, 0.1) !important;
+  color: #061b33 !important;
+}
+
+.site-footer .footer-section h4,
+.site-footer .footer-section h4 *,
+.site-footer .footer-links a,
+.site-footer p,
+.site-footer span,
+.site-footer a,
+.site-footer div,
+.site-footer .brand-mark,
+.site-footer .footer-legal-link,
+.site-footer .footer-bottom,
+.site-footer .footer-bottom-bar,
+.site-footer .footer-copyright,
+.site-footer .footer-legal-links,
+.site-footer .footer-contact-info,
+.site-footer .footer-description {
+  color: #061b33 !important;
+  opacity: 1 !important;
+}
+
+.site-footer .footer-links a:hover,
+.site-footer .footer-legal-link:hover {
+  color: #0b284c !important;
+}
+
+.site-footer .landing-logo img {
+  filter: none !important;
+}

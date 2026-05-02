@@ -1,0 +1,98 @@
+/* CSS for contact section *//* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* Tablet - 900px */
+@media (max-width: 900px) {
+  .contact-hero {
+    padding-top: 140px;
+  }
+  
+  .contact-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile - 768px */
+@media (max-width: 768px) {
+  .contact-hero {
+    padding-top: 120px;
+    padding-bottom: 48px;
+  }
+  
+  .contact-form {
+    padding: 24px;
+  }
+}
+
+/* Mobile - 640px */
+@media (max-width: 640px) {
+  .contact-hero {
+    padding-top: 110px;
+  }
+  
+  .contact-title {
+    font-size: 1.8rem;
+  }
+  
+  .contact-form {
+    padding: 20px;
+  }
+}
+
+/* Extra Small - 480px */
+@media (max-width: 480px) {
+  .contact-hero {
+    padding-top: 100px;
+  }
+  
+  .contact-title {
+    font-size: 1.6rem;
+  }
+  
+  .contact-form {
+    padding: 16px;
+  }
+}
+.contact-page {
+
+}
+
+/* ── White Footer ── */
+.site-footer {
+  background: #ffffff !important;
+  border-top: 1px solid rgba(6, 27, 51, 0.1) !important;
+  color: #061b33 !important;
+}
+
+.site-footer .footer-section h4,
+.site-footer .footer-section h4 *,
+.site-footer .footer-links a,
+.site-footer p,
+.site-footer span,
+.site-footer a,
+.site-footer div,
+.site-footer .brand-mark,
+.site-footer .footer-legal-link,
+.site-footer .footer-bottom,
+.site-footer .footer-bottom-bar,
+.site-footer .footer-copyright,
+.site-footer .footer-legal-links,
+.site-footer .footer-contact-info,
+.site-footer .footer-description {
+  color: #061b33 !important;
+  opacity: 1 !important;
+}
+
+.site-footer .footer-links a:hover,
+.site-footer .footer-legal-link:hover {
+  color: #0b284c !important;
+}
+
+.site-footer .landing-logo img {
+  filter: none !important;
+}

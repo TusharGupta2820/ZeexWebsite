@@ -1,0 +1,98 @@
+/* CSS for services section *//* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* Tablet - 900px */
+@media (max-width: 900px) {
+  .services-hero {
+    padding-top: 140px;
+  }
+  
+  .services-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+  
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile - 768px */
+@media (max-width: 768px) {
+  .services-hero {
+    padding-top: 120px;
+    padding-bottom: 48px;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .service-card {
+    padding: 24px;
+  }
+}
+
+/* Mobile - 640px */
+@media (max-width: 640px) {
+  .services-hero {
+    padding-top: 110px;
+  }
+  
+  .services-title {
+    font-size: 1.8rem;
+  }
+  
+  .service-card {
+    padding: 20px;
+  }
+}
+
+/* Extra Small - 480px */
+@media (max-width: 480px) {
+  .services-hero {
+    padding-top: 100px;
+  }
+  
+  .services-title {
+    font-size: 1.6rem;
+  }
+}
+.services-page {
+
+}
+
+/* ── White Footer ── */
+.site-footer {
+  background: #ffffff !important;
+  border-top: 1px solid rgba(6, 27, 51, 0.1) !important;
+  color: #061b33 !important;
+}
+
+.site-footer .footer-section h4,
+.site-footer .footer-section h4 *,
+.site-footer .footer-links a,
+.site-footer p,
+.site-footer span,
+.site-footer a,
+.site-footer div,
+.site-footer .brand-mark,
+.site-footer .footer-legal-link,
+.site-footer .footer-bottom,
+.site-footer .footer-bottom-bar,
+.site-footer .footer-copyright,
+.site-footer .footer-legal-links,
+.site-footer .footer-contact-info,
+.site-footer .footer-description {
+  color: #061b33 !important;
+  opacity: 1 !important;
+}
+
+.site-footer .footer-links a:hover,
+.site-footer .footer-legal-link:hover {
+  color: #0b284c !important;
+}
+
+.site-footer .landing-logo img {
+  filter: none !important;
+}
