@@ -333,23 +333,9 @@ const achievements: Achievement[] = [
 
 export default function AchievementsPage() {
   const countersAnimated = useRef(false);
-  const featureVideoRef = useRef<HTMLVideoElement>(null);
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedAchievement, setSelectedAchievement] = useState<Achievement | null>(null);
   const [activeImageIdx, setActiveImageIdx] = useState(0);
-
-  // Ensure feature video plays
-  useEffect(() => {
-    const video = featureVideoRef.current;
-    if (video) {
-      video.play().catch(err => {
-        console.log('Video autoplay prevented:', err);
-        setTimeout(() => {
-          video.play().catch(() => console.log('Video play failed'));
-        }, 1000);
-      });
-    }
-  }, []);
 
   const openModal = (ach: Achievement) => {
     setSelectedAchievement(ach);
@@ -474,19 +460,6 @@ export default function AchievementsPage() {
       <main className="achievements-page">
         {/* HERO SECTION */}
         <section className="achievements-hero">
-          {/* Video Background */}
-          <video
-            ref={featureVideoRef}
-            className="ach-hero-video"
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="auto"
-          >
-            <source src="/achievements/achievements-bg.mp4" type="video/mp4" />
-          </video>
-          <div className="ach-hero-video-overlay" />
           {/* <Achievements3DScene /> */}
           <div className="ach-particles">
             <div className="ach-particle" />
@@ -517,7 +490,6 @@ export default function AchievementsPage() {
           {/* Video Container - Right Side */}
           <div className="ach-hero-video-container">
             <video
-              ref={featureVideoRef}
               className="ach-hero-feature-video"
               autoPlay
               loop
@@ -593,6 +565,9 @@ export default function AchievementsPage() {
                     <span className={`award-tag ${ach.tagClass}`}>{ach.tag}</span>
                   </div>
                   <div className="award-card-body">
+                    <div className="award-thumb" aria-hidden="true">
+                      <img src={ach.images[0]} alt="" loading="lazy" />
+                    </div>
                     <h3 className="award-title">{ach.title}</h3>
                     <div className="award-year">{ach.year}</div>
                     <p className="award-short-summary">{ach.shortSummary}</p>
@@ -622,6 +597,9 @@ export default function AchievementsPage() {
                     <span className={`award-tag ${ach.tagClass}`}>{ach.tag}</span>
                   </div>
                   <div className="award-card-body">
+                    <div className="award-thumb" aria-hidden="true">
+                      <img src={ach.images[0]} alt="" loading="lazy" />
+                    </div>
                     <h3 className="award-title">{ach.title}</h3>
                     <div className="award-year">{ach.year}</div>
                     <p className="award-short-summary">{ach.shortSummary}</p>
@@ -651,6 +629,9 @@ export default function AchievementsPage() {
                     <span className={`award-tag ${ach.tagClass}`}>{ach.tag}</span>
                   </div>
                   <div className="award-card-body">
+                    <div className="award-thumb" aria-hidden="true">
+                      <img src={ach.images[0]} alt="" loading="lazy" />
+                    </div>
                     <h3 className="award-title">{ach.title}</h3>
                     <div className="award-year">{ach.year}</div>
                     <p className="award-short-summary">{ach.shortSummary}</p>
@@ -680,6 +661,9 @@ export default function AchievementsPage() {
                     <span className={`award-tag ${ach.tagClass}`}>{ach.tag}</span>
                   </div>
                   <div className="award-card-body">
+                    <div className="award-thumb" aria-hidden="true">
+                      <img src={ach.images[0]} alt="" loading="lazy" />
+                    </div>
                     <h3 className="award-title">{ach.title}</h3>
                     <div className="award-year">{ach.year}</div>
                     <p className="award-short-summary">{ach.shortSummary}</p>
