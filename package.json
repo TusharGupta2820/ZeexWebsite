@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "record-demo": "node scripts/record-demo.js",
-    "export": "next build && next export -o out"
+    "export": "next build"
   },
   "dependencies": {
     "@react-three/drei": "^9.122.0",
