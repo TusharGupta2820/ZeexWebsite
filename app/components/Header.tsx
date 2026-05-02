@@ -46,42 +46,42 @@ export default function Header({ onNavigate }: Props) {
           <div className="nav-dropdown-menu">
             <div className="dropdown-grid">
               <Link href="/services/z-tracs" className="dropdown-item" onClick={() => handleNavClick('services')}>
-                <span className="dropdown-icon">📍</span>
+                <span className="dropdown-icon" aria-hidden />
                 <div className="dropdown-text">
                   <span className="dropdown-title">Z-tracs</span>
                   <span className="dropdown-desc">Tracking & Monitoring</span>
                 </div>
               </Link>
               <Link href="/services/z-factory" className="dropdown-item" onClick={() => handleNavClick('services')}>
-                <span className="dropdown-icon">🏭</span>
+                <span className="dropdown-icon" aria-hidden />
                 <div className="dropdown-text">
                   <span className="dropdown-title">Z-factory</span>
                   <span className="dropdown-desc">Smart Manufacturing</span>
                 </div>
               </Link>
               <Link href="/services/z-market" className="dropdown-item" onClick={() => handleNavClick('services')}>
-                <span className="dropdown-icon">🛒</span>
+                <span className="dropdown-icon" aria-hidden />
                 <div className="dropdown-text">
                   <span className="dropdown-title">Z-Market</span>
                   <span className="dropdown-desc">Retail & Wholesale</span>
                 </div>
               </Link>
               <Link href="/services/z-support" className="dropdown-item" onClick={() => handleNavClick('services')}>
-                <span className="dropdown-icon">🎧</span>
+                <span className="dropdown-icon" aria-hidden />
                 <div className="dropdown-text">
                   <span className="dropdown-title">Z-support</span>
                   <span className="dropdown-desc">Customer Assistance</span>
                 </div>
               </Link>
               <Link href="/services/z-audit" className="dropdown-item" onClick={() => handleNavClick('services')}>
-                <span className="dropdown-icon">📋</span>
+                <span className="dropdown-icon" aria-hidden />
                 <div className="dropdown-text">
                   <span className="dropdown-title">Z-audit</span>
                   <span className="dropdown-desc">Compliance & Review</span>
                 </div>
               </Link>
               <Link href="/services/z-drone" className="dropdown-item" onClick={() => handleNavClick('services')}>
-                <span className="dropdown-icon">🚁</span>
+                <span className="dropdown-icon" aria-hidden />
                 <div className="dropdown-text">
                   <span className="dropdown-title">Z-Drone</span>
                   <span className="dropdown-desc">Aerial Surveillance</span>

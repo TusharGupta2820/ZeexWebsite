@@ -86,19 +86,27 @@ export default function ZTracsPage() {
             </h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '30px' }}>
               <div style={{ padding: '30px', background: 'rgba(0, 229, 255, 0.05)', border: '1px solid rgba(0, 229, 255, 0.2)', borderRadius: '16px', textAlign: 'center' }}>
-                <div style={{ fontSize: '3rem', marginBottom: '16px' }}>🕐</div>
+                <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '16px' }}>
+                  <span className="ui-marker ui-marker--md" aria-hidden />
+                </div>
                 <h3 style={{ color: '#00e5ff', fontSize: '1.3rem', marginBottom: '12px' }}>Real-time AI-driven traffic intelligence</h3>
               </div>
               <div style={{ padding: '30px', background: 'rgba(0, 229, 255, 0.05)', border: '1px solid rgba(0, 229, 255, 0.2)', borderRadius: '16px', textAlign: 'center' }}>
-                <div style={{ fontSize: '3rem', marginBottom: '16px' }}>🚑</div>
+                <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '16px' }}>
+                  <span className="ui-marker ui-marker--md" aria-hidden />
+                </div>
                 <h3 style={{ color: '#00e5ff', fontSize: '1.3rem', marginBottom: '12px' }}>Priority movement for emergency vehicles</h3>
               </div>
               <div style={{ padding: '30px', background: 'rgba(0, 229, 255, 0.05)', border: '1px solid rgba(0, 229, 255, 0.2)', borderRadius: '16px', textAlign: 'center' }}>
-                <div style={{ fontSize: '3rem', marginBottom: '16px' }}>🚦</div>
+                <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '16px' }}>
+                  <span className="ui-marker ui-marker--md" aria-hidden />
+                </div>
                 <h3 style={{ color: '#00e5ff', fontSize: '1.3rem', marginBottom: '12px' }}>Adaptive signal control based on live data</h3>
               </div>
               <div style={{ padding: '30px', background: 'rgba(0, 229, 255, 0.05)', border: '1px solid rgba(0, 229, 255, 0.2)', borderRadius: '16px', textAlign: 'center' }}>
-                <div style={{ fontSize: '3rem', marginBottom: '16px' }}>📊</div>
+                <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '16px' }}>
+                  <span className="ui-marker ui-marker--md" aria-hidden />
+                </div>
                 <h3 style={{ color: '#00e5ff', fontSize: '1.3rem', marginBottom: '12px' }}>Centralised monitoring and alerts</h3>
               </div>
             </div>

@@ -515,7 +515,7 @@ export default function AchievementsPage() {
         {/* COMPANY AT A GLANCE */}
         <section className="glance-section ach-reveal">
           <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-            <span className="ach-section-number">⚙</span>
+            <span className="ach-section-number ach-section-number--wide">01</span>
             <h2 style={{ fontSize: 'clamp(1.8rem, 3vw, 2.4rem)', marginBottom: '8px' }}>Company at a Glance</h2>
           </div>
           <div className="glance-grid ach-stagger-children">
@@ -691,32 +691,26 @@ export default function AchievementsPage() {
             </p>
             <div className="capabilities-grid ach-stagger-children">
               <div className="capability-card">
-                <div className="capability-icon">🧠</div>
                 <h4 className="capability-title">Own AI Models</h4>
                 <p className="capability-desc">Proprietary AI models built in-house for safety, surveillance, and traffic intelligence</p>
               </div>
               <div className="capability-card">
-                <div className="capability-icon">🔧</div>
                 <h4 className="capability-title">In-House Hardware Devices</h4>
                 <p className="capability-desc">Custom hardware designed and manufactured by the Zeex AI team</p>
               </div>
               <div className="capability-card">
-                <div className="capability-icon">💻</div>
                 <h4 className="capability-title">Proprietary Software</h4>
                 <p className="capability-desc">Fully integrated software platform for monitoring, analytics, and insights</p>
               </div>
               <div className="capability-card">
-                <div className="capability-icon">👁</div>
                 <h4 className="capability-title">Real-Time Computer Vision</h4>
                 <p className="capability-desc">Instant violation detection, traffic flow analysis, and threat identification</p>
               </div>
               <div className="capability-card">
-                <div className="capability-icon">📊</div>
                 <h4 className="capability-title">Predictive Analytics</h4>
                 <p className="capability-desc">Actionable intelligence for administration and law enforcement</p>
               </div>
               <div className="capability-card">
-                <div className="capability-icon">🏙</div>
                 <h4 className="capability-title">Smart City Solutions</h4>
                 <p className="capability-desc">Making cities, industries, and public spaces smarter, safer, and more efficient</p>
               </div>
@@ -784,7 +778,7 @@ export default function AchievementsPage() {
               <ul className="ach-modal-bullets">
                 {selectedAchievement.bullets.map((bullet, idx) => (
                   <li key={idx}>
-                    <span className="ach-modal-bullet-icon">✦</span>
+                    <span className="ach-modal-bullet-icon" aria-hidden />
                     {bullet}
                   </li>
                 ))}

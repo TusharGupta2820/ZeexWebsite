@@ -464,7 +464,7 @@
 
         // Dashboard reveals
         tl.add(()=>{
-          gsap.to(beamRight, {opacity:0, duration:0.25}); gsap.to('#camWrap', {rotationY:0, duration:0.3}); camLed.setAttribute('fill','#00ff88'); camStatus.textContent='COMPLETE ✓';
+          gsap.to(beamRight, {opacity:0, duration:0.25}); gsap.to('#camWrap', {rotationY:0, duration:0.3}); camLed.setAttribute('fill','#00ff88'); camStatus.textContent='COMPLETE';
           // inject cards
           // If dashboard is set to video mode (for user-supplied output), skip injecting demo detection cards
           const dashVideo = document.getElementById('dashOutput');
@@ -565,7 +565,7 @@
           // all inputs processed -> face output (left)
           camStatus.textContent = 'SENDING TO OUTPUT...';
           await faceTo('left', 0.7);
-          camStatus.textContent = 'COMPLETE ✓';
+          camStatus.textContent = 'COMPLETE';
 
           // autoplay dashboard video only when facing output
           if(dashVideo){

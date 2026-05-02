@@ -188,7 +188,7 @@ export default function ServicesPage() {
                   <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '15px' }}>
                     {service.benefits.map((benefit, bIdx) => (
                       <li key={bIdx} style={{ display: 'flex', alignItems: 'flex-start', gap: '15px', color: 'rgba(255,255,255,0.8)' }}>
-                        <span style={{ color: 'var(--accent)', fontSize: '1.2rem', lineHeight: '1' }}>✓</span>
+                        <span className="ui-bullet" style={{ marginTop: '4px' }} aria-hidden />
                         <span style={{ lineHeight: '1.4' }}>{benefit}</span>
                       </li>
                     ))}
@@ -315,7 +315,7 @@ export default function ServicesPage() {
               flexDirection: 'column',
               gap: '15px'
             }}>
-              <span style={{ fontSize: '3rem', background: 'rgba(255,255,255,0.1)', width: '80px', height: '80px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>▶</span>
+              <span className="ui-marker ui-marker--xl" aria-hidden style={{ borderColor: 'rgba(255,255,255,0.35)', background: 'rgba(255,255,255,0.06)' }} />
               <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: '1.1rem' }}>Video Placeholder (Coming Soon)</span>
             </div>
           </div>

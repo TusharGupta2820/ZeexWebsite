@@ -2431,15 +2431,25 @@ a {
 
 .dropdown-icon {
   background: #eef2ff;
-  color: #4f46e5;
+  color: transparent;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: 0;
+  line-height: 0;
   flex-shrink: 0;
+  position: relative;
+}
+
+.dropdown-icon::before {
+  content: '';
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00e5ff, #4f46e5);
 }
 
 .dropdown-text {
@@ -2651,7 +2661,6 @@ a {
   .dropdown-icon {
     width: 36px;
     height: 36px;
-    font-size: 1.1rem;
   }
 
   .dropdown-title {
@@ -2697,5 +2706,85 @@ a {
     font-size: 0.85rem;
     min-height: 38px;
   }
+}
+
+/* Neutral markers (replaces decorative emoji icons) */
+.ui-marker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 229, 255, 0.45);
+  background: rgba(79, 70, 229, 0.08);
+  box-sizing: border-box;
+}
+
+.ui-marker::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00e5ff, #6366f1);
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+}
+
+.ui-marker--xs {
+  width: 28px;
+  height: 28px;
+}
+
+.ui-marker--xs::after {
+  width: 6px;
+  height: 6px;
+}
+
+.ui-marker--sm {
+  width: 36px;
+  height: 36px;
+}
+
+.ui-marker--sm::after {
+  width: 8px;
+  height: 8px;
+}
+
+.ui-marker--md {
+  width: 50px;
+  height: 50px;
+}
+
+.ui-marker--md::after {
+  width: 11px;
+  height: 11px;
+}
+
+.ui-marker--lg {
+  width: 70px;
+  height: 70px;
+}
+
+.ui-marker--lg::after {
+  width: 14px;
+  height: 14px;
+}
+
+.ui-marker--xl {
+  width: 80px;
+  height: 80px;
+}
+
+.ui-marker--xl::after {
+  width: 16px;
+  height: 16px;
+}
+
+.ui-bullet {
+  flex-shrink: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--cyan, #00e5ff);
+  box-shadow: 0 0 8px rgba(0, 229, 255, 0.35);
 }
 

@@ -249,16 +249,16 @@ export default function AboutPage() {
           <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', color: '#fff', marginBottom: '50px', textAlign: 'center' }}>Problem We Solve</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '40px', maxWidth: '1200px', margin: '0 auto' }}>
             <div>
-              <h3 style={{ fontSize: '1.5rem', color: '#00e5ff', marginBottom: '20px' }}>🚨 Current Challenges</h3>
+              <h3 style={{ fontSize: '1.5rem', color: '#00e5ff', marginBottom: '20px' }}>Current Challenges</h3>
               <ul style={{ listStyle: 'none', padding: 0 }}>
-                <li style={{ padding: '12px 0', color: 'rgba(255,255,255,0.85)', fontSize: '1.1rem', borderBottom: '1px solid rgba(255,255,255,0.1)' }}>❌ Passive monitoring systems</li>
-                <li style={{ padding: '12px 0', color: 'rgba(255,255,255,0.85)', fontSize: '1.1rem', borderBottom: '1px solid rgba(255,255,255,0.1)' }}>❌ High human dependency</li>
-                <li style={{ padding: '12px 0', color: 'rgba(255,255,255,0.85)', fontSize: '1.1rem', borderBottom: '1px solid rgba(255,255,255,0.1)' }}>❌ Delayed response times</li>
-                <li style={{ padding: '12px 0', color: 'rgba(255,255,255,0.85)', fontSize: '1.1rem' }}>❌ Missed threats & anomalies</li>
+                <li style={{ padding: '12px 0', color: 'rgba(255,255,255,0.85)', fontSize: '1.1rem', borderBottom: '1px solid rgba(255,255,255,0.1)' }}>Passive monitoring systems</li>
+                <li style={{ padding: '12px 0', color: 'rgba(255,255,255,0.85)', fontSize: '1.1rem', borderBottom: '1px solid rgba(255,255,255,0.1)' }}>High human dependency</li>
+                <li style={{ padding: '12px 0', color: 'rgba(255,255,255,0.85)', fontSize: '1.1rem', borderBottom: '1px solid rgba(255,255,255,0.1)' }}>Delayed response times</li>
+                <li style={{ padding: '12px 0', color: 'rgba(255,255,255,0.85)', fontSize: '1.1rem' }}>Missed threats &amp; anomalies</li>
               </ul>
             </div>
             <div>
-              <h3 style={{ fontSize: '1.5rem', color: '#ff6b6b', marginBottom: '20px' }}>⚠️ Impact</h3>
+              <h3 style={{ fontSize: '1.5rem', color: '#ff6b6b', marginBottom: '20px' }}>Impact</h3>
               <ul style={{ listStyle: 'none', padding: 0 }}>
                 <li style={{ padding: '12px 0', color: 'rgba(255,255,255,0.85)', fontSize: '1.1rem', borderBottom: '1px solid rgba(255,255,255,0.1)' }}>• Security breaches</li>
                 <li style={{ padding: '12px 0', color: 'rgba(255,255,255,0.85)', fontSize: '1.1rem', borderBottom: '1px solid rgba(255,255,255,0.1)' }}>• Operational inefficiencies</li>
@@ -276,22 +276,18 @@ export default function AboutPage() {
           <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', color: '#fff', marginBottom: '50px', textAlign: 'center' }}>Our Solution</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '30px', maxWidth: '1200px', margin: '0 auto' }}>
             <div className="feature-card" style={{ padding: '30px', textAlign: 'center', transition: 'all 0.3s ease' }}>
-              <div style={{ fontSize: '3rem', marginBottom: '15px' }}>🔍</div>
               <h3 style={{ fontSize: '1.3rem', color: '#fff', marginBottom: '10px' }}>Real-Time Threat Detection</h3>
               <p style={{ color: 'rgba(255,255,255,0.7)' }}>AI-powered instant identification of security threats</p>
             </div>
             <div className="feature-card" style={{ padding: '30px', textAlign: 'center', transition: 'all 0.3s ease' }}>
-              <div style={{ fontSize: '3rem', marginBottom: '15px' }}>🧠</div>
               <h3 style={{ fontSize: '1.3rem', color: '#fff', marginBottom: '10px' }}>Pattern Recognition</h3>
               <p style={{ color: 'rgba(255,255,255,0.7)' }}>Advanced algorithms detect unusual behavior patterns</p>
             </div>
             <div className="feature-card" style={{ padding: '30px', textAlign: 'center', transition: 'all 0.3s ease' }}>
-              <div style={{ fontSize: '3rem', marginBottom: '15px' }}>⚡</div>
               <h3 style={{ fontSize: '1.3rem', color: '#fff', marginBottom: '10px' }}>Instant Alerts</h3>
               <p style={{ color: 'rgba(255,255,255,0.7)' }}>Real-time notifications to security teams</p>
             </div>
             <div className="feature-card" style={{ padding: '30px', textAlign: 'center', transition: 'all 0.3s ease' }}>
-              <div style={{ fontSize: '3rem', marginBottom: '15px' }}>🤖</div>
               <h3 style={{ fontSize: '1.3rem', color: '#fff', marginBottom: '10px' }}>Automated Response</h3>
               <p style={{ color: 'rgba(255,255,255,0.7)' }}>Proactive actions before incidents escalate</p>
             </div>
@@ -467,17 +463,14 @@ export default function AboutPage() {
           <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', color: '#fff', marginBottom: '50px', textAlign: 'center' }}>Our Approach</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px', maxWidth: '1200px', margin: '0 auto' }}>
             <div className="feature-card" style={{ padding: '40px 30px', textAlign: 'center' }}>
-              <div style={{ fontSize: '3.5rem', marginBottom: '20px' }}>👁️</div>
               <h3 style={{ fontSize: '1.5rem', color: '#00e5ff', marginBottom: '15px' }}>Perception</h3>
               <p style={{ color: 'rgba(255,255,255,0.8)', lineHeight: '1.7' }}>Advanced sensors and cameras capture comprehensive environmental data in real-time</p>
             </div>
             <div className="feature-card" style={{ padding: '40px 30px', textAlign: 'center' }}>
-              <div style={{ fontSize: '3.5rem', marginBottom: '20px' }}>🧠</div>
               <h3 style={{ fontSize: '1.5rem', color: '#00e5ff', marginBottom: '15px' }}>Understanding</h3>
               <p style={{ color: 'rgba(255,255,255,0.8)', lineHeight: '1.7' }}>AI processes and analyzes patterns to understand context and detect anomalies</p>
             </div>
             <div className="feature-card" style={{ padding: '40px 30px', textAlign: 'center' }}>
-              <div style={{ fontSize: '3.5rem', marginBottom: '20px' }}>⚡</div>
               <h3 style={{ fontSize: '1.5rem', color: '#00e5ff', marginBottom: '15px' }}>Action</h3>
               <p style={{ color: 'rgba(255,255,255,0.8)', lineHeight: '1.7' }}>Automated responses deployed instantly to mitigate threats before they escalate</p>
             </div>
@@ -491,15 +484,15 @@ export default function AboutPage() {
           <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', color: '#fff', marginBottom: '50px', textAlign: 'center' }}>Why ZeexAI?</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '25px', maxWidth: '1200px', margin: '0 auto' }}>
             {[
-              { icon: '✅', title: 'Proactive Detection', desc: 'Identify threats before they occur' },
-              { icon: '✅', title: 'Real-Time Decisions', desc: 'Instant AI-powered responses' },
-              { icon: '✅', title: 'High Accuracy', desc: '99.9% threat detection rate' },
-              { icon: '✅', title: 'Scalable', desc: 'From single sites to enterprise deployments' },
-              { icon: '✅', title: 'Easy Integration', desc: 'Works with existing infrastructure' },
-              { icon: '✅', title: 'Cost Effective', desc: 'Reduce operational costs by 60%' }
+              { title: 'Proactive Detection', desc: 'Identify threats before they occur' },
+              { title: 'Real-Time Decisions', desc: 'Instant AI-powered responses' },
+              { title: 'High Accuracy', desc: '99.9% threat detection rate' },
+              { title: 'Scalable', desc: 'From single sites to enterprise deployments' },
+              { title: 'Easy Integration', desc: 'Works with existing infrastructure' },
+              { title: 'Cost Effective', desc: 'Reduce operational costs by 60%' },
             ].map((item, idx) => (
               <div key={idx} className="feature-card" style={{ padding: '25px', display: 'flex', alignItems: 'flex-start', gap: '15px', transition: 'all 0.3s ease' }}>
-                <span style={{ fontSize: '1.8rem', minWidth: '40px' }}>{item.icon}</span>
+                <span className="ui-bullet" aria-hidden style={{ marginTop: '8px' }} />
                 <div>
                   <h4 style={{ fontSize: '1.15rem', color: '#fff', marginBottom: '8px' }}>{item.title}</h4>
                   <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.95rem' }}>{item.desc}</p>
@@ -516,14 +509,13 @@ export default function AboutPage() {
           <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', color: '#fff', marginBottom: '50px', textAlign: 'center' }}>Industries We Impact</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '25px', maxWidth: '1200px', margin: '0 auto' }}>
             {[
-              { icon: '🏙️', name: 'Smart Cities' },
-              { icon: '🏭', name: 'Industrial Safety' },
-              { icon: '🛍️', name: 'Retail Security' },
-              { icon: '🏦', name: 'Banking' },
-              { icon: '🏛️', name: 'Public Infrastructure' }
+              { name: 'Smart Cities' },
+              { name: 'Industrial Safety' },
+              { name: 'Retail Security' },
+              { name: 'Banking' },
+              { name: 'Public Infrastructure' },
             ].map((industry, idx) => (
               <div key={idx} className="feature-card" style={{ padding: '35px 25px', textAlign: 'center', transition: 'all 0.3s ease' }}>
-                <div style={{ fontSize: '3rem', marginBottom: '15px' }}>{industry.icon}</div>
                 <h4 style={{ fontSize: '1.2rem', color: '#fff' }}>{industry.name}</h4>
               </div>
             ))}
@@ -578,10 +570,10 @@ export default function AboutPage() {
           <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', color: '#fff', marginBottom: '50px', textAlign: 'center' }}>Security & Privacy</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '30px', maxWidth: '1200px', margin: '0 auto' }}>
             {[
-              { icon: '🔒', title: 'Data Encryption', desc: 'End-to-end encryption for all data' },
-              { icon: '🛡️', title: 'Privacy-First AI', desc: 'Built with privacy at the core' },
-              { icon: '📋', title: 'GDPR Compliant', desc: 'Following global privacy standards' },
-              { icon: '⚖️', title: 'Ethical AI', desc: 'Responsible and transparent AI practices' }
+              { title: 'Data Encryption', desc: 'End-to-end encryption for all data' },
+              { title: 'Privacy-First AI', desc: 'Built with privacy at the core' },
+              { title: 'GDPR Compliant', desc: 'Following global privacy standards' },
+              { title: 'Ethical AI', desc: 'Responsible and transparent AI practices' },
             ].map((item, idx) => (
               <div key={idx} className="feature-card security-card" style={{ 
                 padding: '36px 28px', 
@@ -592,7 +584,6 @@ export default function AboutPage() {
                 boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)',
                 transition: 'all 0.3s ease'
               }}>
-                <div style={{ fontSize: '3rem', marginBottom: '18px' }}>{item.icon}</div>
                 <h4 style={{ fontSize: '1.25rem', color: '#fff', marginBottom: '12px', fontWeight: '600' }}>{item.title}</h4>
                 <p style={{ color: 'rgba(255, 255, 255, 0.85)', fontSize: '1rem', lineHeight: '1.6', margin: 0 }}>{item.desc}</p>
               </div>
@@ -610,15 +601,15 @@ export default function AboutPage() {
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '25px' }}>
             <div style={{ padding: '25px', background: 'rgba(0,229,255,0.1)', borderRadius: '12px', border: '1px solid rgba(0,229,255,0.3)' }}>
-              <h4 style={{ color: '#00e5ff', fontSize: '1.3rem', marginBottom: '10px' }}>🤖 Autonomous Security</h4>
+              <h4 style={{ color: '#00e5ff', fontSize: '1.3rem', marginBottom: '10px' }}>Autonomous Security</h4>
               <p style={{ color: 'rgba(255,255,255,0.8)' }}>Self-learning systems that adapt and evolve</p>
             </div>
             <div style={{ padding: '25px', background: 'rgba(0,229,255,0.1)', borderRadius: '12px', border: '1px solid rgba(0,229,255,0.3)' }}>
-              <h4 style={{ color: '#00e5ff', fontSize: '1.3rem', marginBottom: '10px' }}>🏙️ Smart Cities</h4>
+              <h4 style={{ color: '#00e5ff', fontSize: '1.3rem', marginBottom: '10px' }}>Smart Cities</h4>
               <p style={{ color: 'rgba(255,255,255,0.8)' }}>Connected urban safety ecosystems</p>
             </div>
             <div style={{ padding: '25px', background: 'rgba(0,229,255,0.1)', borderRadius: '12px', border: '1px solid rgba(0,229,255,0.3)' }}>
-              <h4 style={{ color: '#00e5ff', fontSize: '1.3rem', marginBottom: '10px' }}>🔮 Predictive AI</h4>
+              <h4 style={{ color: '#00e5ff', fontSize: '1.3rem', marginBottom: '10px' }}>Predictive AI</h4>
               <p style={{ color: 'rgba(255,255,255,0.8)' }}>Anticipate threats before they materialize</p>
             </div>
           </div>
@@ -631,17 +622,14 @@ export default function AboutPage() {
           <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', color: '#fff', marginBottom: '50px', textAlign: 'center' }}>Partnerships</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '30px', maxWidth: '1200px', margin: '0 auto' }}>
             <div className="feature-card" style={{ padding: '30px', textAlign: 'center' }}>
-              <div style={{ fontSize: '3rem', marginBottom: '15px' }}>🏛️</div>
               <h3 style={{ fontSize: '1.3rem', color: '#fff', marginBottom: '10px' }}>Government</h3>
               <p style={{ color: 'rgba(255,255,255,0.7)' }}>Collaborating with public sector organizations</p>
             </div>
             <div className="feature-card" style={{ padding: '30px', textAlign: 'center' }}>
-              <div style={{ fontSize: '3rem', marginBottom: '15px' }}>🏙️</div>
               <h3 style={{ fontSize: '1.3rem', color: '#fff', marginBottom: '10px' }}>Smart Cities</h3>
               <p style={{ color: 'rgba(255,255,255,0.7)' }}>Building intelligent urban infrastructure</p>
             </div>
             <div className="feature-card" style={{ padding: '30px', textAlign: 'center' }}>
-              <div style={{ fontSize: '3rem', marginBottom: '15px' }}>🏢</div>
               <h3 style={{ fontSize: '1.3rem', color: '#fff', marginBottom: '10px' }}>Enterprises</h3>
               <p style={{ color: 'rgba(255,255,255,0.7)' }}>Securing Fortune 500 companies worldwide</p>
             </div>

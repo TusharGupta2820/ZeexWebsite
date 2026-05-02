@@ -273,6 +273,12 @@
   margin-bottom: 18px;
 }
 
+.ach-section-number--wide {
+  width: auto;
+  min-width: 52px;
+  padding: 0 12px;
+}
+
 .ach-section-title {
   font-size: clamp(2rem, 3.5vw, 3rem);
   margin-bottom: 16px;
@@ -539,18 +545,6 @@
 
 .capability-card:hover::after {
   transform: scaleX(1);
-}
-
-.capability-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, rgba(0, 229, 255, 0.12), rgba(74, 144, 232, 0.12));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 16px;
-  font-size: 1.3rem;
 }
 
 .capability-title {
@@ -1169,10 +1163,6 @@
   transform: perspective(800px) rotateX(1deg) rotateY(1deg) translateY(-6px) scale(1.02);
 }
 
-.capability-icon {
-  transform: translateZ(30px);
-}
-
 .capability-title {
   transform: translateZ(15px);
 }
@@ -1239,18 +1229,6 @@
 @keyframes numberGlow {
   0% { text-shadow: 0 0 20px rgba(0, 229, 255, 0.2); }
   100% { text-shadow: 0 0 50px rgba(0, 229, 255, 0.5); }
-}
-
-/* ══════════════════════════
-   3D FLOATING ANIMATION FOR CAPABILITY ICONS
-══════════════════════════ */
-.capability-icon {
-  animation: none;
-}
-
-@keyframes iconFloat {
-  0%, 100% { transform: translateZ(30px) translateY(0); }
-  50% { transform: translateZ(30px) translateY(-6px); }
 }
 
 /* ══════════════════════════
@@ -1712,16 +1690,23 @@
 
 .ach-modal-bullet-icon {
   flex-shrink: 0;
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   border-radius: 8px;
   background: rgba(0, 229, 255, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--cyan);
-  font-size: 0.65rem;
   margin-top: 2px;
+}
+
+.ach-modal-bullet-icon::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--cyan);
+  box-shadow: 0 0 8px rgba(0, 229, 255, 0.35);
 }
 
 /* ══════════════════════════

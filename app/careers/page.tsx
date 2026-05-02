@@ -94,9 +94,9 @@ export default function CareersPage() {
     return () => obs.disconnect();
   }, []);
   const whyWorkWithUs = [
-    { icon: "🚀", title: "Innovation First", desc: "Work on cutting-edge AI technologies and be part of groundbreaking innovations." },
-    { icon: "🌍", title: "Global Impact", desc: "Your work will help businesses worldwide leverage the power of AI." },
-    { icon: "👥", title: "Great Team", desc: "Join a diverse team of experts who are passionate about technology and innovation." }
+    { title: "Innovation First", desc: "Work on cutting-edge AI technologies and be part of groundbreaking innovations." },
+    { title: "Global Impact", desc: "Your work will help businesses worldwide leverage the power of AI." },
+    { title: "Great Team", desc: "Join a diverse team of experts who are passionate about technology and innovation." },
   ];
 
   const openPositions: JobPosition[] = [
@@ -453,14 +453,14 @@ export default function CareersPage() {
   ];
 
   const benefits = [
-    { icon: "🎓", title: "Campus Access", desc: "Get access to IIT Madras campus during working hours" },
-    { icon: "🤝", title: "Professional Network", desc: "Build a strong network with industry leaders and peers" },
-    { icon: "📜", title: "Certificate", desc: "Receive a certificate of internship or employment" },
-    { icon: "💼", title: "Industry Skills", desc: "Gain hands-on experience with real-world projects and tools" },
-    { icon: "☁️", title: "Cloud Tech", desc: "Work on software like AWS, GCP, and other industry platforms" },
-    { icon: "🚀", title: "Career Growth", desc: "Clear career progression and mentorship" },
-    { icon: "🏠", title: "Remote Work", desc: "Flexible work from anywhere policy" },
-    { icon: "🎉", title: "Team Events", desc: "Regular team building and social events" }
+    { title: "Campus Access", desc: "Get access to IIT Madras campus during working hours" },
+    { title: "Professional Network", desc: "Build a strong network with industry leaders and peers" },
+    { title: "Certificate", desc: "Receive a certificate of internship or employment" },
+    { title: "Industry Skills", desc: "Gain hands-on experience with real-world projects and tools" },
+    { title: "Cloud Tech", desc: "Work on software like AWS, GCP, and other industry platforms" },
+    { title: "Career Growth", desc: "Clear career progression and mentorship" },
+    { title: "Remote Work", desc: "Flexible work from anywhere policy" },
+    { title: "Team Events", desc: "Regular team building and social events" },
   ];
 
   return (
@@ -505,9 +505,7 @@ export default function CareersPage() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
               {whyWorkWithUs.map((item, idx) => (
                 <div key={idx} className="feature-card career-why-card career-reveal" style={{ padding: '30px', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '15px', transition: 'all 0.6s cubic-bezier(0.2, 0.9, 0.2, 1)' }}>
-                  <span style={{ fontSize: '2.5rem', background: 'rgba(79, 70, 229, 0.1)', width: '70px', height: '70px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%', boxShadow: '0 0 30px rgba(0, 229, 255, 0.2)' }}>
-                    {item.icon}
-                  </span>
+                  <span className="ui-marker ui-marker--lg" aria-hidden />
                   <h3 style={{ fontSize: '1.3rem', color: '#fff', fontWeight: '600' }}>{item.title}</h3>
                   <p style={{ color: 'rgba(255,255,255,0.7)', lineHeight: '1.6' }}>{item.desc}</p>
                 </div>
@@ -558,9 +556,7 @@ export default function CareersPage() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '25px' }}>
               {benefits.map((perk, idx) => (
                 <div key={idx} className="feature-card career-reveal" style={{ padding: '25px', display: 'flex', alignItems: 'flex-start', gap: '15px', transition: 'all 0.6s cubic-bezier(0.2, 0.9, 0.2, 1)' }}>
-                  <span style={{ fontSize: '2rem', background: 'rgba(79, 70, 229, 0.1)', minWidth: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '12px' }}>
-                    {perk.icon}
-                  </span>
+                  <span className="ui-marker ui-marker--md" aria-hidden />
                   <div>
                     <h3 style={{ fontSize: '1.1rem', color: '#fff', fontWeight: '600', marginBottom: '5px' }}>{perk.title}</h3>
                     <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.9rem', lineHeight: '1.5' }}>{perk.desc}</p>
@@ -656,7 +652,7 @@ export default function CareersPage() {
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                 {selectedJob.responsibilities.map((resp, idx) => (
                   <li key={idx} style={{ color: 'rgba(255,255,255,0.85)', lineHeight: '1.8', fontSize: '1rem', padding: '8px 0', paddingLeft: '24px', position: 'relative' }}>
-                    <span style={{ position: 'absolute', left: 0, color: '#00e5ff' }}>✦</span>
+                    <span className="ui-bullet" style={{ position: 'absolute', left: 0, top: '0.5em' }} aria-hidden />
                     {resp}
                   </li>
                 ))}
@@ -669,7 +665,7 @@ export default function CareersPage() {
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                 {selectedJob.requirements.map((req, idx) => (
                   <li key={idx} style={{ color: 'rgba(255,255,255,0.85)', lineHeight: '1.8', fontSize: '1rem', padding: '8px 0', paddingLeft: '24px', position: 'relative' }}>
-                    <span style={{ position: 'absolute', left: 0, color: '#00e5ff' }}>✦</span>
+                    <span className="ui-bullet" style={{ position: 'absolute', left: 0, top: '0.5em' }} aria-hidden />
                     {req}
                   </li>
                 ))}
@@ -682,7 +678,7 @@ export default function CareersPage() {
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                 {selectedJob.benefits.map((benefit, idx) => (
                   <li key={idx} style={{ color: 'rgba(255,255,255,0.85)', lineHeight: '1.8', fontSize: '1rem', padding: '8px 0', paddingLeft: '24px', position: 'relative' }}>
-                    <span style={{ position: 'absolute', left: 0, color: '#00e5ff' }}>✦</span>
+                    <span className="ui-bullet" style={{ position: 'absolute', left: 0, top: '0.5em' }} aria-hidden />
                     {benefit}
                   </li>
                 ))}

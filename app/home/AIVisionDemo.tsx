@@ -378,7 +378,7 @@ export default function AIVisionDemo() {
 
         if (camStatusRef.current) camStatusRef.current.textContent = "SENDING TO OUTPUT...";
         await faceTo("left", 0.7);
-        if (camStatusRef.current) camStatusRef.current.textContent = "COMPLETE ✓";
+        if (camStatusRef.current) camStatusRef.current.textContent = "COMPLETE";
 
         const videoContainer = dashVideoContainerRef.current;
         if (videoContainer) {

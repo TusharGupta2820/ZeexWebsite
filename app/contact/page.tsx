@@ -41,7 +41,7 @@ export default function ContactPage() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
               <div className="feature-card" style={{ padding: '30px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '15px' }}>
-                  <span style={{ fontSize: '1.5rem' }}>⏱️</span>
+                  <span className="ui-marker ui-marker--xs" aria-hidden />
                   <h3 style={{ fontSize: '1.2rem', color: '#fff' }}>Response Time</h3>
                 </div>
                 <p style={{ color: 'rgba(255,255,255,0.7)', lineHeight: '1.6' }}>Typically replies within 2 business hours</p>
@@ -49,7 +49,7 @@ export default function ContactPage() {
 
               <div className="feature-card" style={{ padding: '30px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '15px' }}>
-                  <span style={{ fontSize: '1.5rem' }}>💬</span>
+                  <span className="ui-marker ui-marker--xs" aria-hidden />
                   <h3 style={{ fontSize: '1.2rem', color: '#fff' }}>Pre-sales Questions?</h3>
                 </div>
                 <p style={{ color: 'rgba(255,255,255,0.7)', lineHeight: '1.6' }}>Contact our sales team at<br/><a href="mailto:admin@zeexai.com" style={{ color: '#a5b4fc', textDecoration: 'none' }}>admin@zeexai.com</a></p>
@@ -87,21 +87,21 @@ export default function ContactPage() {
         <section className="home-section" style={{ paddingBottom: '80px', background: 'transparent' }}>
           <div className="section-inner" style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
             <div className="feature-card" style={{ padding: '40px 30px', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '15px' }}>
-              <span style={{ fontSize: '2.5rem', background: 'rgba(79, 70, 229, 0.1)', width: '70px', height: '70px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%' }}>✉️</span>
+              <span className="ui-marker ui-marker--lg" aria-hidden />
               <h3 style={{ fontSize: '1.4rem', color: '#fff' }}>Email Us</h3>
               <p style={{ color: 'rgba(255,255,255,0.7)' }}>Get in touch via email for general inquiries</p>
               <a href="mailto:admin@zeexai.com" style={{ color: '#a5b4fc', fontSize: '1.1rem', fontWeight: '600', textDecoration: 'none', marginTop: 'auto' }}>admin@zeexai.com</a>
             </div>
             
             <div className="feature-card" style={{ padding: '40px 30px', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '15px' }}>
-              <span style={{ fontSize: '2.5rem', background: 'rgba(79, 70, 229, 0.1)', width: '70px', height: '70px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%' }}>📞</span>
+              <span className="ui-marker ui-marker--lg" aria-hidden />
               <h3 style={{ fontSize: '1.4rem', color: '#fff' }}>Call Us</h3>
               <p style={{ color: 'rgba(255,255,255,0.7)' }}>Speak directly with our support team</p>
               <a href="tel:+918709221636" style={{ color: '#a5b4fc', fontSize: '1.1rem', fontWeight: '600', textDecoration: 'none', marginTop: 'auto' }}>+91 8709221636</a>
             </div>
             
             <div className="feature-card" style={{ padding: '40px 30px', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '15px' }}>
-              <span style={{ fontSize: '2.5rem', background: 'rgba(79, 70, 229, 0.1)', width: '70px', height: '70px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%' }}>📍</span>
+              <span className="ui-marker ui-marker--lg" aria-hidden />
               <h3 style={{ fontSize: '1.4rem', color: '#fff' }}>Visit Us</h3>
               <p style={{ color: 'rgba(255,255,255,0.7)' }}>Schedule a visit to our headquarters</p>
               <span style={{ color: '#fff', fontSize: '1rem', fontWeight: '500', marginTop: 'auto' }}>Nirmaan, CFI, IIT Madras, Chennai, India 600036</span>
